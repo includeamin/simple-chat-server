@@ -8,9 +8,7 @@ includeamin_token = ''
 
 sio = socketio.Client()
 sio.connect(
-    f'http://localhost:3000?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZS'
-    'I6ImFtaW5qYW1hbCIsImNhIjoxNTkyMjI1Mj'
-    'EyLjI2NjEyMywiZXgiOjE1OTI4MzAwMTIuMjY2MTQ2fQ.oylQVWwJRna29Xj9rAz4RskEwm8bUlI8wdUs2CCmAy4')
+    f'http://localhost:3000?token={includeamin_token}')
 
 
 @sio.on('my_response')
