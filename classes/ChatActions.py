@@ -35,7 +35,7 @@ class ChatActions:
 
     @staticmethod
     def get_user_un_saw_messages(username: str) -> dict:
-        messages = session.query(ChatDb).filter(and_(ChatDb.sender_username == username, ChatDb.is_seen == False))
+        messages = session.query(ChatDb).filter(and_(ChatDb.receiver_username == username, ChatDb.is_seen == False))
         response = UserMessagesResponse(messages=[])
         for message in messages:
             response.messages.append(UserUnreadMessage(**message.__dict__))
