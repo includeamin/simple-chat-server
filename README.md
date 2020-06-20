@@ -13,10 +13,4 @@
 - [x] Direct message
 - [X] Get unreaded messages
 - [X] Seen status
-- [ ] Deliver status
-- [ ] Group
-- [ ] Channel
-- [ ] Content_Type= Image
-- [ ] Content_Type= Audio
-- [ ] Content_Type= Video
-- [ ] Content_Type= File
+- [x] Other features will add in this repo (chatserver)[https://github.com/includeamin/chatserver]
